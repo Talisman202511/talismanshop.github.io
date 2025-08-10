@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог талисманов | Магические Талисманы</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; background-color: #121212; color: #ffffff; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background-color: #1a1a1a; padding: 20px 0; border-bottom: 2px solid #00C896; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: 700; color: #00C896; }
+        nav ul { display: flex; list-style: none; gap: 30px; }
+        nav a { color: #ffffff; text-decoration: none; font-weight: 500; transition: color 0.3s ease; }
+        nav a:hover { color: #FFD700; }
+        .section-title { text-align: center; font-size: 32px; margin: 40px 0; color: #FFD700; }
+        .catalog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin: 40px 0; }
+        .product-card { background: #1a1a1a; border-radius: 10px; padding: 25px; text-align: center; transition: transform 0.3s ease; border: 1px solid #333; }
+        .product-card:hover { transform: translateY(-5px); border-color: #00C896; }
+        .product-image { width: 150px; height: 150px; background: linear-gradient(45deg, #00C896, #FFD700); border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 48px; }
+        .product-title { font-size: 20px; margin-bottom: 15px; color: #FFD700; }
+        .product-price { font-size: 24px; font-weight: 700; color: #00C896; margin-bottom: 20px; }
+        .btn { background: linear-gradient(45deg, #00C896, #00a878); color: white; border: none; padding: 12px 30px; font-size: 16px; font-weight: 600; border-radius: 25px; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 1px; text-decoration: none; display: inline-block; }
+        .btn:hover { background: linear-gradient(45deg, #FFD700, #e6c200); color: #000; transform: scale(1.05); }
+        footer { background: #0a0a0a; padding: 40px 0; text-align: center; border-top: 2px solid #333; margin-top: 60px; }
+        @media (max-width: 768px) { .header-content { flex-direction: column; gap: 20px; } nav ul { flex-wrap: wrap; justify-content: center; gap: 15px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">ТАЛИСМАНЫ РЕЙКИ</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2 class="section-title">Каталог талисманов</h2>
+        <div class="catalog-grid">
+            <div class="product-card">
+                <div class="product-image">🛡️</div>
+                <h3 class="product-title">Талисман «Щит»</h3>
+                <div class="product-price">990 руб.</div>
+                <a href="#shield" class="btn">Подробнее</a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🌊</div>
+                <h3 class="product-title">Талисман «Поток»</h3>
+                <div class="product-price">1 900 руб.</div>
+                <a href="#flow" class="btn">Подробнее</a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">💚</div>
+                <h3 class="product-title">Талисман «Сердце Жизни»</h3>
+                <div class="product-price">1 500 руб.</div>
+                <a href="#heart" class="btn">Подробнее</a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">💎</div>
+                <h3 class="product-title">Талисман «Кристалл»</h3>
+                <div class="product-price">3 500 руб.</div>
+                <a href="#crystal" class="btn">Подробнее</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div style="color: #666; font-size: 14px;">
+                &copy; 2024 Талисманы Ментального и Денежного Рейки. Все права защищены.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

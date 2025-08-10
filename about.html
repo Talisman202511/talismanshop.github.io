@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас | Магические Талисманы</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; background-color: #121212; color: #ffffff; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background-color: #1a1a1a; padding: 20px 0; border-bottom: 2px solid #00C896; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: 700; color: #00C896; }
+        nav ul { display: flex; list-style: none; gap: 30px; }
+        nav a { color: #ffffff; text-decoration: none; font-weight: 500; transition: color 0.3s ease; }
+        nav a:hover { color: #FFD700; }
+        .content-page { padding: 60px 0; }
+        .content-page h1 { color: #FFD700; margin-bottom: 30px; font-size: 36px; }
+        .content-page h2 { color: #00C896; margin: 30px 0 15px; font-size: 24px; }
+        .content-page p { color: #cccccc; margin-bottom: 20px; line-height: 1.8; }
+        .content-page ul { color: #cccccc; margin-bottom: 20px; padding-left: 20px; }
+        .content-page li { margin-bottom: 10px; }
+        footer { background: #0a0a0a; padding: 40px 0; text-align: center; border-top: 2px solid #333; margin-top: 60px; }
+        @media (max-width: 768px) { .header-content { flex-direction: column; gap: 20px; } nav ul { flex-wrap: wrap; justify-content: center; gap: 15px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">ТАЛИСМАНЫ РЕЙКИ</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="content-page">
+        <div class="container">
+            <h1>О нас</h1>
+            <p>Мы занимаемся созданием эзотерических товаров через Ментальный и Денежный рейки. Наша миссия — помочь людям улучшить свою жизнь с помощью талисманов.</p>
+            <h2>Наша история</h2>
+            <p>Наша компания была основана в 2020 году группой практикующих рейки мастеров, которые осознали, что энергетические талисманы могут стать мощным инструментом для помощи людям в решении различных жизненных задач.</p>
+            <h2>Наши ценности</h2>
+            <ul>
+                <li><strong>Качество</strong> - Мы гарантируем качество и эффективность наших продуктов</li>
+                <li><strong>Этика</strong> - Все наши талисманы создаются с чистыми помыслами и благими намерениями</li>
+                <li><strong>Доступность</strong> - Мы делаем эзотерические практики доступными для каждого</li>
+                <li><strong>Поддержка</strong> - Мы всегда готовы помочь нашим клиентам</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div style="color: #666; font-size: 14px;">
+                &copy; 2024 Талисманы Ментального и Денежного Рейки. Все права защищены.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
