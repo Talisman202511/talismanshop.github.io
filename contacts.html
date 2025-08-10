@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Магические Талисманы</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; background-color: #121212; color: #ffffff; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background-color: #1a1a1a; padding: 20px 0; border-bottom: 2px solid #00C896; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: 700; color: #00C896; }
+        nav ul { display: flex; list-style: none; gap: 30px; }
+        nav a { color: #ffffff; text-decoration: none; font-weight: 500; transition: color 0.3s ease; }
+        nav a:hover { color: #FFD700; }
+        .content-page { padding: 60px 0; }
+        .content-page h1 { color: #FFD700; margin-bottom: 30px; font-size: 36px; text-align: center; }
+        .contacts-page { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
+        @media (max-width: 768px) { .contacts-page { grid-template-columns: 1fr; } }
+        .contact-info h2 { color: #FFD700; margin-bottom: 20px; }
+        .contact-item { margin-bottom: 25px; padding-left: 30px; position: relative; }
+        .contact-item::before { position: absolute; left: 0; top: 0; color: #00C896; font-size: 20px; }
+        .email::before { content: '📧'; }
+        .phone::before { content: '📱'; }
+        .time::before { content: '⏰'; }
+        .contact-form { background: #1a1a1a; padding: 30px; border-radius: 15px; border: 1px solid #333; }
+        .form-title { color: #FFD700; margin-bottom: 20px; text-align: center; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 5px; color: #FFD700; }
+        .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #333; background: #2d2d2d; color: #ffffff; border-radius: 5px; font-family: 'Montserrat', sans-serif; }
+        .form-group textarea { height: 150px; resize: vertical; }
+        .submit-btn { width: 100%; background: linear-gradient(45deg, #00C896, #00a878); color: white; border: none; padding: 15px; font-size: 16px; font-weight: 600; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; }
+        .submit-btn:hover { background: linear-gradient(45deg, #FFD700, #e6c200); color: #000; }
+        footer { background: #0a0a0a; padding: 40px 0; text-align: center; border-top: 2px solid #333; margin-top: 60px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">ТАЛИСМАНЫ РЕЙКИ</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="content-page">
+        <div class="container">
+            <h1>Контакты</h1>
+            
+            <div class="contacts-page">
+                <div class="contact-info">
+                    <h2>Свяжитесь с нами</h2>
+                    
+                    <div class="contact-item email">
+                        <h3>Email</h3>
+                        <p>arbussorov@gmail.com</p>
+                        <p>Для вопросов, предложений и обратной связи</p>
+                    </div>
+                    
+                    <div class="contact-item phone">
+                        <h3>Телефон</h3>
+                        <p>+7 (928) 210-00-56</p>
+                        <p>Пн-Пт: 10:00 - 19:00 по МСК</p>
+                    </div>
+                    
+                    <div class="contact-item time">
+                        <h3>Время работы</h3>
+                        <p>Понедельник - Пятница: 10:00 - 19:00</p>
+                        <p>Суббота - Воскресенье: Выходной</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 class="form-title">Отправить сообщение</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ваше имя *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Тема *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Сообщение *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div style="color: #666; font-size: 14px;">
+                &copy; 2024 Талисманы Ментального и Денежного Рейки. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
